@@ -2,12 +2,12 @@ package de.mvcp.controller.impl;
 
 import java.sql.SQLException;
 
+import javafx.collections.ObservableList;
 import de.mvcp.controller.Controller;
 import de.mvcp.dao.ArticleDao;
 import de.mvcp.dao.impl.ArticleDaoImpl;
 import de.mvcp.model.Article;
 import de.mvcp.view.impl.ViewImpl;
-import javafx.collections.ObservableList;
 
 public class ControllerImpl implements Controller {
 
@@ -15,10 +15,6 @@ public class ControllerImpl implements Controller {
 
 	public ControllerImpl() {
 
-	}
-
-	public void showView() {
-		javafx.application.Application.launch(ViewImpl.class);
 	}
 
 	public ObservableList<Article> getAll() throws SQLException {

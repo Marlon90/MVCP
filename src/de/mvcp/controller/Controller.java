@@ -7,8 +7,6 @@ import javafx.collections.ObservableList;
 
 public interface Controller {
 
-	public void showView();
-
 	public ObservableList<Article> getAll() throws SQLException;
 
 	public void setArticle(int articleNummer, String articleName, int articleCost, int articlePrice)
